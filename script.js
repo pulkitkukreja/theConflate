@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('.website').css("visibility","visible");
     anime({
      targets: '.anim',
-     translateY: -750,
+     translateY: -4000,
      scale: 0.95,
      duration: 1500
     });
