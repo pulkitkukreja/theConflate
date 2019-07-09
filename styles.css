@@ -17,7 +17,7 @@ body{
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-color: #17223B !important;
+
 }
 
 .anim, .anim svg {
@@ -37,9 +37,10 @@ body{
   visibility: hidden;
   font-family: "NewBold";
   width: 100%;
-  height: 20rem;
+  height: 100%;
   font-size: 18px;
   overflow: hidden;
+  background-color: #17223B !important;
 }
 
 .header{
@@ -56,7 +57,7 @@ body{
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background-color: #17223B;
+  background-color: #17223B !important;
   opacity: 0.70;
 
 }
@@ -153,6 +154,7 @@ body{
 .header .login{
   font-size: 1.5rem;
   font-family: "NewNormal";
+  font-weight: bold;
   background-color: inherit;
   cursor: pointer;
   color: #ffffff;
@@ -167,6 +169,7 @@ body{
   font-size: 1.5rem;
   font-family: "NewNormal";
   background-color: inherit;
+  font-weight: bold;
   cursor: pointer;
   color: #ffffff;
   padding: 0.5em;
@@ -190,7 +193,7 @@ body{
     display: none;
   }
   .header .sign-up {
-    margin-left: 80%
+    margin-left: 75%
   }
 }
 
@@ -199,8 +202,9 @@ body{
   display: block;
   top: 100%;
   width: 100%;
+  justify-content: center;
   height: 100%;
   z-index: 2;
-  background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25), rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #670d10, #092756);
+  background: linear-gradient(60deg, rgba(104, 128, 138, 0.4) 0%, rgba(138, 114, 76, 0) 0%), linear-gradient(to bottom, rgba(57, 173, 219, .25), rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #670d10, #092756);
 }
 }
