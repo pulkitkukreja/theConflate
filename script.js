@@ -1,3 +1,4 @@
+
 var pathEls = document.querySelectorAll('path');
 for (var i = 0; i < pathEls.length; i++) {
   var pathEl = pathEls[i];
@@ -20,11 +21,12 @@ $(document).ready(function() {
   setTimeout(function(){
     $('.anim').css("border-radius","10px");
     $('.website').css("visibility","visible");
+    $('body').css("overflow","scroll");
     anime({
      targets: '.anim',
-     translateY: -4000,
+     translateY: -2000,
      scale: 0.95,
-     duration: 1500
+     duration: 2500
     });
 
     anime({
@@ -32,11 +34,12 @@ $(document).ready(function() {
      translateY: 50,
      scale: {
        value: 0.95,
-     duration: 2000
+     duration: 2500
     }
     });
-
+  $('anime').remove();
   }, 4300);
+
 });
 
 function openNav() {
