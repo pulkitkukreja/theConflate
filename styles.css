@@ -22,11 +22,12 @@ body{
 
 .anim, .anim svg {
 
-  position: absolute;
+  position: fixed;
   width: 100% !important;
   height: 100% !important;
   background-color: #17223B;
   overflow: hidden !important;
+  z-index: 10 !important;
 
 }
 .anim path {
@@ -34,12 +35,13 @@ body{
 }
 
 .website{
-  visibility: hidden;
+  visibility: visible;
   font-family: "NewBold";
   width: 100%;
   height: 100%;
   font-size: 18px;
   overflow: hidden;
+
   background-color: #17223B !important;
 }
 
@@ -59,7 +61,7 @@ body{
   min-height: 100%;
   background-color: #17223B !important;
   opacity: 0.70;
-
+  z-index: 3;
 }
 
 
@@ -193,7 +195,7 @@ body{
     display: none;
   }
   .header .sign-up {
-    margin-left: 75%
+    margin-left: 75%;
   }
 }
 
