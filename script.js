@@ -20,7 +20,7 @@ for (var i = 0; i < pathEls.length; i++) {
 $(document).ready(function() {
   setTimeout(function(){
     $('.anim').css("border-radius","10px");
-    $('.website').css("visibility","visible");
+
     $('body').css("overflow","scroll");
     anime({
      targets: '.anim',
@@ -37,8 +37,8 @@ $(document).ready(function() {
      duration: 2500
     }
     });
-  $('anime').remove();
-  }, 4300);
+  $('.anim').remove();
+}, 4300);
 
 });
 
@@ -50,3 +50,48 @@ document.getElementById("myNav").style.width = "100%";
 function closeNav() {
 document.getElementById("myNav").style.width = "0%";
 }
+
+$
+
+//Hover anim on nav-divs
+$('.sign-up').hover(function(){
+  anime.timeline({loop: false})
+  .add({
+    targets: '.sign-up-line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeInOutExpo",
+    duration: 400
+  });
+
+}, function(){
+  anime.timeline({loop: false})
+  .add({
+    targets: '.sign-up-line',
+    scaleX: [1,0],
+    opacity: [1,0.5],
+    easing: "easeInOutExpo",
+    duration: 400
+  });
+});
+
+$('.login').hover(function(){
+  anime.timeline({loop: false})
+  .add({
+    targets: '.login-line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeInOutExpo",
+    duration: 400
+  });
+
+}, function(){
+  anime.timeline({loop: false})
+  .add({
+    targets: '.login-line',
+    scaleX: [1,0],
+    opacity: [1,0.5],
+    easing: "easeInOutExpo",
+    duration: 400
+  });
+});
