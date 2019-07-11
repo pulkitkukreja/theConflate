@@ -95,3 +95,29 @@ $('.login').hover(function(){
     duration: 400
   });
 });
+
+//section1 animation begins
+
+$('.section1-heading').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+var flag = true;
+setTimeout(function(){
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50 && flag) {
+      anime.timeline({loop: 1})
+        .add({
+          targets: '.section1-heading .letter',
+          translateY: [-110,0],
+          easing: "easeOutExpo",
+          duration: 1400,
+          delay: function(el, i) {
+            return 30 * i;
+          }
+        })
+        flag = false;
+    } else {
+
+    }
+  });
+},4300);
